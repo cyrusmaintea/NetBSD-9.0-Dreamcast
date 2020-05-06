@@ -16,8 +16,8 @@ NetBSD 9.0 Dreamcast Install Guide
 (3) go into partition a's dev directory. and run these commands.
 		apply sudo if needed.
 		
-	./MAKEDEV wd0
-	./MAKEDEV ld0
+	./MAKEDEV wd0 -- for using g1ata pata ide hdd as rootfs
+	./MAKEDEV ld0 -- for using scimmc sdcard as rootfs
 	./MAKEDEV all
 	
 (4) cd to partition a's etc directory.
